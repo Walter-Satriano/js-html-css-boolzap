@@ -1,0 +1,86 @@
+/*REGOLE GENERALI*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*paragrafo per poter visualizzare l'overflow*/
+p {
+  font-size: 40px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 2% 0;
+}
+
+.cont_center {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*REGOLE COMUNI*/
+
+/*colonna sx*/
+.col_left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
+.header_left {
+  display: flex;
+  height: 60px;
+  border-right: 1px solid gray;
+}
+
+
+
+.notice {
+  display: flex;
+  height: 75px;
+  background-color: rgb(51, 255, 253);
+}
+
+.chat_search {
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+}
+
+.user_list {
+  height: calc(100% - 60px - 75px - 35px);
+  overflow: auto;
+}
+
+
+
+/*colonna dx*/
+.col_right {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+}
+
+.header_right{
+  display: flex;
+  height: 60px;
+  background-color: rgb(235, 235, 235);
+}
+
+.chat_room {
+  height: calc(100% - 120px);
+  background-color: rgb(134, 117, 94);
+  overflow: auto;
+}
+
+.write_text {
+  height: 60px;
+  background-color: rgb(244, 224, 186);
+}
