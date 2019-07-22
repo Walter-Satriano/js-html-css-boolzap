@@ -32,14 +32,16 @@
             <!-- sezione notifiche -->
             <div class="notice">
               <a href="#"><i class="fas fa-bell-slash"></i></a>
-              <p>Ricevi notifiche di nuovi messaggi</p>
-              <a href="#">Attiva notifiche desktop</a>
+              <div>
+                <p>Ricevi notifiche di nuovi messaggi</p>
+                <a href="#">Attiva notifiche desktop</a>
+              </div>
             </div>
 
             <!-- sezione ricerca -->
             <div class="chat_search">
               <a href="#"><i class="fas fa-search"></i></a>
-              <input type="text" name="" value="">
+              <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
             </div>
 
             <!-- sezione lista utenti -->
@@ -88,7 +90,8 @@
           <div class="col_right">
             <div class="header_right">
 
-              <div class="cazzo">
+              <!-- header destro -->
+              <div class="header_user">
                 <img src="img/man1.png" alt="avatar-man1">
                 <div class="user">
                   <p>Walter</p>
@@ -103,17 +106,26 @@
               </div>
             </div>
 
+            <!-- sezione chat -->
             <div class="chat_room">
 
-
             </div>
 
+
+            <!-- template per clonare i messaggi inseriti -->
+            <div id="template">
+              <p class="message_green"></p>
+            </div>
+
+
+
+
+            <!-- sezione scrittura ed invio messaggi -->
             <div class="write_text">
               <a href="#"><i class="far fa-smile"></i></a>
-              <input class="write_msg" type="text" name="" value="">
-              <a href="#"><i class="fas fa-paper-plane"></i></a>
+              <input class="write_msg" type="text" name="" value="" placeholder="Scrivi un messaggio">
+              <a id="send_message" href="#"><i class="fas fa-paper-plane"></i></a>
             </div>
-
           </div>
         </div>
       </div>
