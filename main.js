@@ -13,8 +13,17 @@ $( document ).ready(function() {
 
       //pulisco l'input
       $(".write_msg").val("");
+
+
+      //quando inserisco un messaggio, dopo 1 sec appare la risposta
+      setTimeout(function () {
+        var answer = $("#template .message_white").text("Ok").clone();
+        $(".chat_room").append(answer);
+      }, 1000);
     }
   );
+
+
 
 
 });
