@@ -16,13 +16,33 @@
   width: 80%;
   margin: 0 auto;
   display: flex;
+  z-index: 1;
 }
 
 a {
   text-decoration: none;
 }
 
+
 /*REGOLE COMUNI*/
+
+/*sfondo*/
+.background_green {
+  position: absolute;
+  background-color: #1EBDA5;
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+}
+
+.background_gray {
+  position: absolute;
+  top: 150px;
+  background-color: #D7DBD6;
+  width: 100%;
+  height: calc(100vh - 150px);
+  z-index: 0;
+}
 
 /*colonna sx*/
 .col_left {
@@ -164,7 +184,9 @@ a {
 }
 
 .message_green {
-  width: 120px;
+  position: relative;
+  left: 65%;
+  width: 25%;
   border-radius: 5px;
   background-color: rgb(122, 255, 106);
   margin-top: 20px;
@@ -172,9 +194,15 @@ a {
   color: rgb(0, 0, 0);
 }
 
-/* template per clonare i messaggi inseriti */
-#template {
-  display: none;
+.message_white {
+  position: relative;
+  left: 10%;
+  width: 25%;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
 }
 
 /* sez scrivi messaggio */
@@ -198,4 +226,10 @@ a {
 .write_msg {
   width: 70%;
   height: 40px;
+}
+
+
+/* template per clonare i messaggi inseriti */
+#template {
+  display: none;
 }
