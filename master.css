@@ -185,7 +185,7 @@ a {
 /* sez chat room*/
 .cont_chat {
   height: calc(100% - 120px);
-  background-color: rgb(246, 237, 219);
+  background-image: url(img/sfondo1.png);
   overflow: auto;
 }
 
