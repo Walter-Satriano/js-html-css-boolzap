@@ -65,17 +65,27 @@ $(document).ready(function() {
   - Cancella messaggio: cliccando sul messaggio appare un menu a tendina
   che permette di cancellare il messaggio selezionato. */
 
+  //FUNZIONE PER COLLEGARE OGNI UTENTE ALLA PROPRIA CHAT
   $(".chat_items").click(
     function() {
 
       //quando il contatto è cliccato cambia colore
       $(this).toggleClass("bg_items");
 
+      //salvo in una variabile l'attributo assegnato
       var refchat = $(this).attr("refchat");
 
       $(".chat_room").removeClass("active");
 
       $(".chat_room[refchat='"+ refchat +"']").addClass("active");
+
+      //sostituisco il nome utente nella barra header superiore
+      var nome = $(".chat_items[refchat='"+ refchat +"'] .name").text();
+      $(".header_user .name").text(nome);
+
+      //sostituisco l'avatar utente nella barra header superiore
+      var avatar = $(".chat_items[refchat='"+ refchat +"']").find("img").attr("src");
+      $(".header_user").find("img").attr("src", avatar);
     }
   );
 
