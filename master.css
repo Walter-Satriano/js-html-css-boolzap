@@ -50,6 +50,7 @@ a {
   flex-direction: column;
   width: 35%;
   height: 100%;
+  background-color: rgb(250, 250, 250);
 }
 
 .header_left {
@@ -87,6 +88,7 @@ a {
 .fa-bell-slash {
   font-size: 30px;
   margin-right: 15px;
+  color: rgb(255, 255, 255);
 }
 
 .notice p, .notice a {
@@ -125,6 +127,11 @@ a {
   align-items: center;
   padding: 20px 0;
   background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+.bg_items {
+  background-color: rgb(221, 221, 221);
 }
 
 .user_status {
@@ -136,7 +143,7 @@ a {
   margin-left: 10px;
 }
 
-.chat_items p {
+.chat_items p, .chat_items h4 {
   margin-left: 20px;
 }
 
@@ -166,8 +173,7 @@ a {
   align-items: center;
 }
 
-.header_right p {
-  font-size: 14px;
+.header_right p, .header_right h4 {
   margin-left: 20px;
 }
 
@@ -176,11 +182,19 @@ a {
   flex-direction: column;
 }
 
-/* sez chat */
-.chat_room {
+/* sez chat room*/
+.cont_chat {
   height: calc(100% - 120px);
   background-color: rgb(246, 237, 219);
   overflow: auto;
+}
+
+.chat_room {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .message_green {
